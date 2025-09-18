@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>NASA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NASA - Fotos del dia a dia </h1>
+    <p>Explora el universo con imágenes de la NASA</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Foto del día</h2>
+      <button id="botonDia">Ver foto del día</button>
+      <div class="resultado">
+        <h3 id="tituloDia"></h3>
+        <img id="imagenDia">
+        <div id="videoDia"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Buscar por fecha</h2>
+     <input type="text" id="fecha" placeholder="Selecciona una fecha">
+      <button id="botonFecha">Buscar</button>
+      <div class="resultado">
+        <h3 id="tituloFecha"></h3>
+        <img id="imagenFecha">
+        <div id="videoFecha"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Fotos aleatorias</h2>
+      <input type="number" id="cantidad" min="1" max="5" placeholder="1-5">
+      <button id="botonCantidad">Buscar</button>
+      <div class="contenedor_imagen"></div>
+    </div>
+  </main>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="script.js"></script>
+</body>
+</html>
