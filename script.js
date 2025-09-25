@@ -1,7 +1,7 @@
 
 let key = "Ie3kzhEFJpLVCr6RwyZfyflpImrFkSojGotJWtZO";  
 
-let imagenDeDia = document.querySelector("#imagenDeDia");
+let imagenDeDia = document.querySelector("#imagenDia");
 let botonDia = document.querySelector("#botonDia");
 let tituloDia = document.querySelector("#tituloDia");
 
@@ -27,8 +27,8 @@ botonFecha.onclick = function () {
     imagenDia.src = fotoDelDia.url;
     tituloDia.textContent = fotoDelDia.title;
   } else {
-    imagenDia.src = "";
-    tituloDia.textContent = "⚠️ La NASA hoy publicó un video, no una imagen.";
+    imagenFecha.src = "";
+    tituloFecha.textContent = "La NASA hoy publicó un video, no una imagen.";
   }
 });
 
